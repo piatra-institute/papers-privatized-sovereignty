@@ -1,0 +1,9 @@
+[project]
+name = "privatized-sovereignty-sim"
+version = "0.1.0"
+description = "Three mechanisms of privatized sovereignty: the wedge lifecycle, the listing-standards race, and correction capacity under five control architectures"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+]
