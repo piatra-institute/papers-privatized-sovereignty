@@ -1,0 +1,24 @@
+{
+  "pdf_sha256": "f95cd5d8724aedee9ccb7dcda71f6bd61f13fd9ba38fd37bb90a90b7b5a32e36",
+  "page_count": 16,
+  "pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "all_pages_inspected": true,
+  "notes": "All 16 pages inspected after the prose revision; figure titles replaced with descriptive ones; defeat rates in figure 3 annotated as percentages so the custodial 0.4% no longer prints as 0.00. Metadata-only rebuild: the web blurb in metadata.yaml, a hashed build input, changed, so the PDF was re-rendered (1fce85aa7b1e to f95cd5d8724a); the rendered text is byte-for-byte identical and no page was re-inspected."
+}

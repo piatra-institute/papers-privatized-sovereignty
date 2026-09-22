@@ -65,7 +65,7 @@ def plot_lifecycle(res: dict, path: str) -> None:
                  color=BLUE)
     ax1.set_xlabel("firm age since IPO (years)", fontsize=9)
     ax1.set_ylabel("insulation premium (value-flow units)", fontsize=9)
-    ax1.set_title("the founder advantage decays; the drag does not",
+    ax1.set_title("insulation premium by firm age",
                   fontsize=10, color=INK)
     ax1.legend(frameon=False, fontsize=8, loc="upper right")
     _style(ax1)
@@ -86,7 +86,7 @@ def plot_lifecycle(res: dict, path: str) -> None:
     ax2.set_xticks(range(len(order)))
     ax2.set_xticklabels(labels, fontsize=8)
     ax2.set_ylabel("25-year value vs single class", fontsize=9)
-    ax2.set_title("what each charter regime is worth", fontsize=10, color=INK)
+    ax2.set_title("25-year value relative to single class", fontsize=10, color=INK)
     _style(ax2)
     fig.tight_layout()
     fig.savefig(path, dpi=200, bbox_inches="tight")
@@ -125,7 +125,7 @@ def plot_race(res: dict, path: str) -> None:
     axd.spines["top"].set_visible(False)
     ax1.set_ylabel("share of new listings", fontsize=9)
     ax1.set_ylim(-0.01, 0.44)
-    ax1.set_title("sixty years of holdout, then a cascade that never comes back",
+    ax1.set_title("wedge share of new listings and permissiveness",
                   fontsize=10, color=INK)
     ax1.legend(frameon=False, fontsize=8, loc="upper left")
     _style(ax1)
@@ -142,7 +142,7 @@ def plot_race(res: dict, path: str) -> None:
     ax2.set_ylabel("share of new listings", fontsize=9)
     ax2.set_xlabel("calendar year (model eras)", fontsize=9)
     ax2.set_ylim(-0.01, 0.42)
-    ax2.set_title("the two counterfactuals: coordination holds, and quiet holds",
+    ax2.set_title("counterfactuals: flat demand and a retained floor",
                   fontsize=10, color=INK)
     ax2.legend(frameon=False, fontsize=8, loc="upper left")
     _style(ax2)
@@ -170,7 +170,7 @@ def plot_correction(res: dict, path: str) -> None:
             dx, dy, ha = (-11, -4, "right")
         if name == "sealed":
             dx, dy, ha = (-12, -6, "right")
-        ax1.annotate(f"{ARCH_LABEL[name]}\n(defeat {v['defeat_rate']:.2f})",
+        ax1.annotate(f"{ARCH_LABEL[name]}\n(defeat {100 * v['defeat_rate']:.1f}%)",
                      (v["normal_growth_15y"], v["mean_lost"]), fontsize=7.5,
                      color=ARCH_COLOR[name], xytext=(dx, dy), ha=ha,
                      textcoords="offset points")
@@ -178,7 +178,7 @@ def plot_correction(res: dict, path: str) -> None:
     ax1.set_ylabel("mean capability lost in a failure episode", fontsize=9)
     ax1.set_xlim(2.9, 4.85)
     ax1.set_ylim(0.4, 6.0)
-    ax1.set_title("the tail you do not see: best in calm, worst in failure",
+    ax1.set_title("normal-times growth against loss per failure",
                   fontsize=10, color=INK)
     _style(ax1)
     # right: economic exposure as a correction channel
@@ -197,7 +197,7 @@ def plot_correction(res: dict, path: str) -> None:
     ax2.set_xlabel("controller economic exposure (share of losses borne)",
                    fontsize=9)
     ax2.set_ylabel("mean capability lost", fontsize=9)
-    ax2.set_title("exposure is a correction mechanism", fontsize=10, color=INK)
+    ax2.set_title("loss per failure against controller exposure", fontsize=10, color=INK)
     _style(ax2)
     fig.tight_layout()
     fig.savefig(path, dpi=200, bbox_inches="tight")

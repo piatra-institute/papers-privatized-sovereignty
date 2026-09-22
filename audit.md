@@ -2,6 +2,16 @@
 
 Dated log of editorial passes and verification runs. Newest first.
 
+## 2026-09-23 — prose revision
+
+Prose rewritten against the house standards. Headings made descriptive (Introduction, Legal visibility of structural change, The wedge between voting and economic interest, The managerial corporation and one share, one vote, The contractual view and the end of the voting floor, Founder control and the dual-class premium, A lifecycle model of the wedge, Platforms as governing institutions, Index ownership and consent, Competition among listing venues, A model of listing-standard competition, Dimensions of comparison, Five control systems, Institutional decline through selection, A model of correction capacity, Observable correction events, Proposed charter rules, Objections, Falsification, Conclusion, Reproducibility).
+
+Corrections found during the pass:
+  - The abstract said sealed-wedge defeat occurs in 39 percent of episodes "against 0 in 250 under architectures that can remove a controller". results.json gives defeat rates of 0.00375 (custodial, 15 of 4,000), 0.0045 (reciprocal) and 0 (vertical). Now "against at most 0.45 percent".
+  - The body gave the custodial defeat rate as "1 in 250"; it is 1 in 267 (0.375 percent). Now stated as 0.375 percent (15 of 4,000), with the reciprocal and vertical rates added.
+  - Figure 3 printed defeat rates with two decimals, showing the custodial and reciprocal rates as 0.00; now percentages with one decimal.
+Values audited and confirmed: entrenchment threshold 0.4167 = B_PRIV/DRAG (closed form); Ford ratio 23.6 (reported as a factor of 24); crossover 7.13 years by bisection; race years are integer model years. results.json unchanged by the figure edits.
+
 ## 2026-08-13 — v1, first full draft to publication
 
 Scope: the entire paper, simulation, and evidence base, from the seed chat to publication.
