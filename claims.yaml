@@ -1,0 +1,822 @@
+schema: 1
+coverage: reviewed
+reviewed_manuscript_sha256: de2a5118d4c268f8f82d1cd2d97d9a500608ec4c4e6426a043e06595904d353e
+claims:
+- id: abs-alpha-star
+  kind: computation
+  passage: 'In a simple model the wedge finances its own persistence: a controller whose economic stake
+    is below 0.42 rationally keeps control that destroys firm value, because the private benefits of control
+    exceed the controller''s share of the loss, and the Ford family''s stake of 0.018 lies a factor of
+    24 inside that threshold.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /lifecycle/entrenchment/alpha_star
+    reported: '0.42'
+    decimals: 2
+    units: threshold economic stake
+    conditions: lifecycle model (expected-value arithmetic), population of 3 decay types, 25-year horizon
+- id: abs-ford-alpha
+  kind: computation
+  passage: 'In a simple model the wedge finances its own persistence: a controller whose economic stake
+    is below 0.42 rationally keeps control that destroys firm value, because the private benefits of control
+    exceed the controller''s share of the loss, and the Ford family''s stake of 0.018 lies a factor of
+    24 inside that threshold.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /lifecycle/entrenchment/ford_alpha
+    reported: '0.018'
+    decimals: 3
+    units: Ford family economic stake
+    conditions: computed from the Ford DEF 14A record-date share counts
+- id: abs-ford-factor
+  kind: computation
+  passage: 'In a simple model the wedge finances its own persistence: a controller whose economic stake
+    is below 0.42 rationally keeps control that destroys firm value, because the private benefits of control
+    exceed the controller''s share of the loss, and the Ford family''s stake of 0.018 lies a factor of
+    24 inside that threshold.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /lifecycle/entrenchment/ford_benefit_to_exposure
+    reported: '24'
+    decimals: 0
+    units: ratio of threshold stake to Ford stake
+    conditions: lifecycle model (expected-value arithmetic), population of 3 decay types, 25-year horizon
+- id: abs-crossover
+  kind: computation
+  passage: A lifecycle model calibrated to the documented 6-to-9-year fade of the dual-class premium places
+    the crossover at 7.1 years; over 25 years a perpetual wedge loses 0.52 units of value against a single-class
+    baseline while a renewable sunset gains 0.67.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /lifecycle/population_crossover_years
+    reported: '7.1'
+    decimals: 1
+    units: years to population premium crossover
+    conditions: lifecycle model (expected-value arithmetic), population of 3 decay types, 25-year horizon
+- id: abs-perpetual
+  kind: computation
+  passage: A lifecycle model calibrated to the documented 6-to-9-year fade of the dual-class premium places
+    the crossover at 7.1 years; over 25 years a perpetual wedge loses 0.52 units of value against a single-class
+    baseline while a renewable sunset gains 0.67.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /lifecycle/perpetual_value_destroyed
+    reported: '0.52'
+    decimals: 2
+    units: units of value below single-class baseline
+    conditions: lifecycle model (expected-value arithmetic), population of 3 decay types, 25-year horizon
+- id: abs-renewable
+  kind: computation
+  passage: A lifecycle model calibrated to the documented 6-to-9-year fade of the dual-class premium places
+    the crossover at 7.1 years; over 25 years a perpetual wedge loses 0.52 units of value against a single-class
+    baseline while a renewable sunset gains 0.67.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /lifecycle/population_excess_vs_single/renewable
+    reported: '0.67'
+    decimals: 2
+    units: units of value above single-class baseline
+    conditions: lifecycle model (expected-value arithmetic), population of 3 decay types, 25-year horizon
+- id: abs-holdout
+  kind: computation
+  passage: A model of competition among listing venues reproduces 61 years of holdout under low demand
+    and a ratchet ending at 20-to-1 share classes without sunset, where London and Hong Kong arrived in
+    2024 and 2026.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /race/holdout_years
+    reported: '61'
+    decimals: 0
+    units: model years of holdout
+    conditions: listing-competition model (deterministic)
+- id: abs-defeat-sealed
+  kind: computation
+  passage: A correction model comparing 5 control architectures under identical controller failure finds
+    the sealed wedge best in normal times and worst in failure, reaching irrecoverable damage in 39 percent
+    of episodes against at most 0.45 percent where controllers can be removed; transparency alone recovers
+    12 percent of the damage and removability 46 percent.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/sealed/defeat_rate
+    reported: '39'
+    scale: 100
+    decimals: 0
+    units: percent of episodes reaching defeat
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813; sealed wedge
+- id: abs-defeat-reciprocal
+  kind: computation
+  passage: A correction model comparing 5 control architectures under identical controller failure finds
+    the sealed wedge best in normal times and worst in failure, reaching irrecoverable damage in 39 percent
+    of episodes against at most 0.45 percent where controllers can be removed; transparency alone recovers
+    12 percent of the damage and removability 46 percent.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/reciprocal/defeat_rate
+    reported: '0.45'
+    scale: 100
+    decimals: 2
+    units: percent of episodes reaching defeat
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813; reciprocal owner,
+      the highest defeat rate among architectures with removal
+- id: abs-transparency
+  kind: computation
+  passage: A correction model comparing 5 control architectures under identical controller failure finds
+    the sealed wedge best in normal times and worst in failure, reaching irrecoverable damage in 39 percent
+    of episodes against at most 0.45 percent where controllers can be removed; transparency alone recovers
+    12 percent of the damage and removability 46 percent.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/sealed_counterfactual_reduction/free_reporting
+    reported: '12'
+    scale: 100
+    decimals: 0
+    units: percent reduction in damage
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813; sealed wedge
+      given free reporting
+- id: abs-removability
+  kind: computation
+  passage: A correction model comparing 5 control architectures under identical controller failure finds
+    the sealed wedge best in normal times and worst in failure, reaching irrecoverable damage in 39 percent
+    of episodes against at most 0.45 percent where controllers can be removed; transparency alone recovers
+    12 percent of the damage and removability 46 percent.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/sealed_counterfactual_reduction/removability
+    reported: '46'
+    scale: 100
+    decimals: 0
+    units: percent reduction in damage
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813; sealed wedge
+      given removability
+- id: threshold-body
+  kind: computation
+  passage: 'In the model below the threshold stake is 0.42: a controller holding less rationally retains
+    control that destroys firm value, and the smaller the stake, the cheaper the retention.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /lifecycle/entrenchment/alpha_star
+    reported: '0.42'
+    decimals: 2
+    units: threshold economic stake
+    conditions: lifecycle model (expected-value arithmetic), population of 3 decay types, 25-year horizon
+- id: ford-body
+  kind: computation
+  passage: The Ford family's 0.018 lies a factor of 24 inside the threshold.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /lifecycle/entrenchment/ford_alpha
+    reported: '0.018'
+    decimals: 3
+    units: economic stake
+    conditions: Ford DEF 14A counts
+- id: ford-factor-body
+  kind: computation
+  passage: The Ford family's 0.018 lies a factor of 24 inside the threshold.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /lifecycle/entrenchment/ford_benefit_to_exposure
+    reported: '24'
+    decimals: 0
+    units: ratio
+    conditions: lifecycle model (expected-value arithmetic), population of 3 decay types, 25-year horizon
+- id: spacex-body
+  kind: computation
+  passage: The SpaceX founder's 0.46 lies just above it and moves toward it with each sale.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /lifecycle/entrenchment/spacex_alpha
+    reported: '0.46'
+    decimals: 2
+    units: economic stake
+    conditions: computed from the SpaceX prospectus and 10-Q share counts
+- id: lc-crossover
+  kind: computation
+  passage: Firms have 3 decay speeds, calibrated so that the population premium crosses zero at 7.1 years,
+    inside the documented window.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /lifecycle/population_crossover_years
+    reported: '7.1'
+    decimals: 1
+    units: years
+    conditions: lifecycle model (expected-value arithmetic), population of 3 decay types, 25-year horizon
+- id: lc-perpetual
+  kind: computation
+  passage: The perpetual wedge captures the early premium and then follows the decayed advantage down,
+    ending 0.52 units below a single-class baseline.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /lifecycle/perpetual_value_destroyed
+    reported: '0.52'
+    decimals: 2
+    units: units of value
+    conditions: lifecycle model (expected-value arithmetic), population of 3 decay types, 25-year horizon
+- id: lc-event
+  kind: computation
+  passage: An event sunset, conversion on the founder's departure at a 5 percent annual hazard, ends 0.1
+    above the baseline, because departures mostly arrive after the crossover.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /lifecycle/population_excess_vs_single/event
+    reported: '0.1'
+    decimals: 1
+    units: units of value above baseline
+    conditions: lifecycle model (expected-value arithmetic), population of 3 decay types, 25-year horizon
+- id: lc-hard
+  kind: computation
+  passage: A hard 7-year sunset captures the premium and converts, ending at 0.62.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /lifecycle/population_excess_vs_single/hard
+    reported: '0.62'
+    decimals: 2
+    units: units of value above baseline
+    conditions: lifecycle model (expected-value arithmetic), population of 3 decay types, 25-year horizon
+- id: lc-renewable
+  kind: computation
+  passage: A renewable sunset, extending insulation at 5-year intervals when unaffiliated shareholders
+    see a demonstrated advantage, follows each firm's own crossover and ends at 0.67, the best result,
+    because it retains insulation for slowly decaying founders and releases the rest.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /lifecycle/population_excess_vs_single/renewable
+    reported: '0.67'
+    decimals: 2
+    units: units of value above baseline
+    conditions: lifecycle model (expected-value arithmetic), population of 3 decay types, 25-year horizon
+- id: lc-drag
+  kind: assumption
+  passage: A controller starts with a knowledge advantage worth 0.30 units of annual value flow, which
+    decays exponentially; insulation also imposes a constant drag of 0.12, the sum of a 0.05 distortion
+    from extraction of private benefits and the 0.07 a firm forgoes by excluding market discipline.
+  rationale: Structural constants of the lifecycle model (knowledge advantage 0.30, drag 0.12 = 0.05 extraction
+    + 0.07 forgone discipline) set by the authors; only the crossover is calibrated, to the documented
+    6-to-9-year window.
+- id: race-holdout
+  kind: computation
+  passage: While demand stays at its initial level, the restrictive incumbent loses a small number of
+    listings and the norm holds for 61 model years, matching the half-century the New York Stock Exchange
+    held it (Figure 2).
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /race/holdout_years
+    reported: '61'
+    decimals: 0
+    units: model years
+    conditions: listing-competition model (deterministic)
+- id: race-lag
+  kind: computation
+  passage: Demand rises in the venture era and the incumbent defects 7 model years later, at model year
+    1987.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /race/defection_lag_after_demand_rise
+    reported: '7'
+    decimals: 0
+    units: model years after the demand rise
+    conditions: listing-competition model (deterministic)
+- id: race-1987
+  kind: computation
+  passage: Demand rises in the venture era and the incumbent defects 7 model years later, at model year
+    1987.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /race/main/incumbent_defect_calendar
+    reported: '1987'
+    decimals: 0
+    units: model calendar year of incumbent defection
+    conditions: listing-competition model (deterministic)
+- id: race-hk
+  kind: computation
+  passage: The federal floor then keeps new domestic wedges at zero until it is removed, after which the
+    cascade completes immediately; in the era of internationally mobile listings the restrictive foreign
+    venues defect in model years 2020 and 2024; and once every venue is permissive, the degree of permissiveness
+    rises to its maximum and does not fall, the 20-to-1, no-sunset endpoint in the documents.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /race/main/hk_defect_calendar
+    reported: '2020'
+    decimals: 0
+    units: model calendar year
+    conditions: listing-competition model (deterministic)
+- id: race-uk
+  kind: computation
+  passage: The federal floor then keeps new domestic wedges at zero until it is removed, after which the
+    cascade completes immediately; in the era of internationally mobile listings the restrictive foreign
+    venues defect in model years 2020 and 2024; and once every venue is permissive, the degree of permissiveness
+    rises to its maximum and does not fall, the 20-to-1, no-sunset endpoint in the documents.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /race/main/uk_defect_calendar
+    reported: '2024'
+    decimals: 0
+    units: model calendar year
+    conditions: listing-competition model (deterministic)
+- id: race-flat
+  kind: interpretation
+  passage: With demand held flat the norm survives the century, so the race requires rising demand and
+    cannot be explained by exchange behaviour alone.
+  rationale: results.json /race/flat_demand_defected = false; the inference that the race requires rising
+    demand follows from this counterfactual within the model.
+- id: race-tenth
+  kind: interpretation
+  passage: With the floor kept, domestic wedges stay at zero while about a tenth of demand moves to venues
+    outside the coordinated zone, so coordination works imperfectly at a cost that is small relative to
+    the cascade it prevents.
+  rationale: results.json /race/floor_held/domestic_share_final = 0 and /race/floor_held/leakage_over_demand
+    = 0.104; 'about a tenth' is the rounded statement of the latter.
+- id: co-sealed-lost
+  kind: computation
+  passage: The sealed wedge loses 5.35 units of capability per episode and reaches defeat in 39 percent
+    of them, the worst tail in the set.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/sealed/mean_lost
+    reported: '5.35'
+    decimals: 2
+    units: capability units lost per episode
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-sealed-defeat
+  kind: computation
+  passage: The sealed wedge loses 5.35 units of capability per episode and reaches defeat in 39 percent
+    of them, the worst tail in the set.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/sealed/defeat_rate
+    reported: '39'
+    scale: 100
+    decimals: 0
+    units: percent of episodes
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-cust-lost
+  kind: computation
+  passage: The custodial architecture loses 0.89, with defeat in 0.375 percent of episodes (15 of 4,000).
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/custodial/mean_lost
+    reported: '0.89'
+    decimals: 2
+    units: capability units lost per episode
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-cust-defeat
+  kind: computation
+  passage: The custodial architecture loses 0.89, with defeat in 0.375 percent of episodes (15 of 4,000).
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/custodial/defeat_rate
+    reported: '0.375'
+    scale: 100
+    decimals: 3
+    units: percent of episodes
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-recip-lost
+  kind: computation
+  passage: The reciprocal owner loses 1.28, correcting mostly through the controller's own exit, with
+    defeat in 0.45 percent.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/reciprocal/mean_lost
+    reported: '1.28'
+    decimals: 2
+    units: capability units lost per episode
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-recip-defeat
+  kind: computation
+  passage: The reciprocal owner loses 1.28, correcting mostly through the controller's own exit, with
+    defeat in 0.45 percent.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/reciprocal/defeat_rate
+    reported: '0.45'
+    scale: 100
+    decimals: 2
+    units: percent of episodes
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-vert-lost
+  kind: computation
+  passage: The vertical loses 2.69, detecting failure after 3.6 years on average against 0.7 for the custodial
+    architecture and then removing quickly, with no defeats.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/vertical/mean_lost
+    reported: '2.69'
+    decimals: 2
+    units: capability units lost per episode
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-vert-lag
+  kind: computation
+  passage: The vertical loses 2.69, detecting failure after 3.6 years on average against 0.7 for the custodial
+    architecture and then removing quickly, with no defeats.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/vertical/mean_detect_lag
+    reported: '3.6'
+    decimals: 1
+    units: years to detection
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-cust-lag
+  kind: computation
+  passage: The vertical loses 2.69, detecting failure after 3.6 years on average against 0.7 for the custodial
+    architecture and then removing quickly, with no defeats.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/custodial/mean_detect_lag
+    reported: '0.7'
+    decimals: 1
+    units: years to detection
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-net-lost
+  kind: computation
+  passage: The network loses 4.41 over episodes lasting 13.5 years, with reform as its largest correction
+    channel at 0.4 of episodes.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/network/mean_lost
+    reported: '4.41'
+    decimals: 2
+    units: capability units lost per episode
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-net-years
+  kind: computation
+  passage: The network loses 4.41 over episodes lasting 13.5 years, with reform as its largest correction
+    channel at 0.4 of episodes.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/network/mean_years
+    reported: '13.5'
+    decimals: 1
+    units: years per episode
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-net-reform
+  kind: computation
+  passage: The network loses 4.41 over episodes lasting 13.5 years, with reform as its largest correction
+    channel at 0.4 of episodes.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/network/corrected_by/reform
+    reported: '0.4'
+    decimals: 1
+    units: share of episodes corrected by reform
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-growth-sealed
+  kind: computation
+  passage: In normal times the sealed wedge is the best architecture, growing 4.5 against 3.45 for the
+    custodial architecture, because insulation does buy speed while the controller is good, so the tail
+    is invisible in calm periods.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/sealed/normal_growth_15y
+    reported: '4.5'
+    decimals: 1
+    units: capability growth over 15 normal years
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-growth-cust
+  kind: computation
+  passage: In normal times the sealed wedge is the best architecture, growing 4.5 against 3.45 for the
+    custodial architecture, because insulation does buy speed while the controller is good, so the tail
+    is invisible in calm periods.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/custodial/normal_growth_15y
+    reported: '3.45'
+    decimals: 2
+    units: capability growth over 15 normal years
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-red-report
+  kind: computation
+  passage: And in the decomposition, giving the sealed architecture free reporting reduces damage by 12
+    percent, giving it removability reduces damage by 46 percent, and giving it both reduces damage by
+    81 percent, into the custodial range.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/sealed_counterfactual_reduction/free_reporting
+    reported: '12'
+    scale: 100
+    decimals: 0
+    units: percent
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-red-remove
+  kind: computation
+  passage: And in the decomposition, giving the sealed architecture free reporting reduces damage by 12
+    percent, giving it removability reduces damage by 46 percent, and giving it both reduces damage by
+    81 percent, into the custodial range.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/sealed_counterfactual_reduction/removability
+    reported: '46'
+    scale: 100
+    decimals: 0
+    units: percent
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-red-both
+  kind: computation
+  passage: And in the decomposition, giving the sealed architecture free reporting reduces damage by 12
+    percent, giving it removability reduces damage by 46 percent, and giving it both reduces damage by
+    81 percent, into the custodial range.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/sealed_counterfactual_reduction/both
+    reported: '81'
+    scale: 100
+    decimals: 0
+    units: percent
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-closure-open
+  kind: computation
+  passage: 'The elite-closure result qualifies the custodial alternative: when its supervisory channel
+    is captured, loss per episode rises more than fourfold, from 0.58 to 2.59, so custody is only as good
+    as the independence of the custodians.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/custodial_split/open/mean_lost
+    reported: '0.58'
+    decimals: 2
+    units: capability units lost per episode
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813; custodial episodes
+      without elite closure
+- id: co-closure-closed
+  kind: computation
+  passage: 'The elite-closure result qualifies the custodial alternative: when its supervisory channel
+    is captured, loss per episode rises more than fourfold, from 0.58 to 2.59, so custody is only as good
+    as the independence of the custodians.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/custodial_split/closed/mean_lost
+    reported: '2.59'
+    decimals: 2
+    units: capability units lost per episode
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813; custodial episodes
+      with elite closure
+- id: obj-39
+  kind: computation
+  passage: The renewable design answers most of this, since a demonstrated advantage renews; the remainder,
+    projects whose value is real but invisible at every review, is a cost the rules accept in exchange
+    for closing a tail in which 39 percent of sealed failures end in defeat.
+  evidence:
+    file: simulation/output/results.json
+    run_id: models
+    pointer: /correction/grid/sealed/defeat_rate
+    reported: '39'
+    scale: 100
+    decimals: 0
+    units: percent of episodes
+    conditions: correction model, 4,000 failure episodes per architecture, seed 20260813
+- id: co-assumptions
+  kind: assumption
+  passage: An organization has a capability stock of 10 that grows at 0.25 a year under a good controller.
+  rationale: Structural constants of the correction model (stock 10, growth 0.25, damage 0.8, visibility
+    6, defeat 2) and per-architecture parameters are stated assumptions without empirical estimation.
+- id: wedge-def
+  kind: definition
+  passage: The quantity to track is the wedge, voting share minus economic share.
+  rationale: Defines the paper's central measure.
+- id: entrenchment-rule
+  kind: assumption
+  passage: The controller internalizes α of the improvement and all of the private benefit, so control
+    is kept whenever the benefit exceeds α times the forgone value.
+  rationale: Decision rule of the entrenchment model; the threshold stake follows from it given the stated
+    private benefit and forgone value.
+- id: five-dimensions
+  kind: definition
+  passage: Five dimensions organize the comparison.
+  rationale: Defines the comparative frame (visibility, reciprocity, mandate, removability, informational
+    correction).
+- id: self-reinforcing
+  kind: interpretation
+  passage: 'Entrenchment is therefore self-reinforcing: selling economic exposure strengthens the incentive
+    to keep control, and keeping control makes the remaining exposure safer to sell.'
+  rationale: 'Follows from the entrenchment rule: a lower stake lowers the retention threshold, so selling
+    exposure strengthens the incentive to retain control.'
+- id: orderings-robust
+  kind: interpretation
+  passage: 'Finally, the models are stylized: the lifecycle drag, the defection thresholds and the correction
+    rates are structural assumptions without empirical estimation, so the claims concern orderings, crossovers
+    and decompositions that survive changes in parameters, with every constant published and every invariant
+    tested on each run.'
+  rationale: 'States the evidential status of the models: constants are assumptions; claims concern orderings
+    and decompositions.'
+- id: pathology-locus
+  kind: interpretation
+  passage: Hierarchy is present in every system, and the pathology arises where hierarchy is protected
+    from correction, whether by a share class, a loyalty cadre, a crossholding network or a family pyramid.
+  rationale: Comparative conclusion drawn from the five-system discussion and the correction model; not
+    a measured quantity.
+- id: charter-rules
+  kind: normative
+  passage: The reform follows the models in 6 rules.
+  rationale: Policy proposals derived from the model rankings (renewable sunset first; removability over
+    transparency).
+- id: spacex-82
+  kind: source
+  passage: In June 2026 SpaceX priced the largest listing of its era with its founder at 82.4 percent
+    of the vote, holding 91.6 percent of a Class B that separately elects 51 percent of the directors,
+    with an economic stake of roughly 46 percent that falls with every sale [@spacex2026].
+  evidence:
+    citation_id: spacex2026
+    locator: Form 424B4 (filed June 12, 2026), prospectus summary and 'Description of Capital Stock'
+    verified: true
+    verification_note: 'Fetched from EDGAR: Musk ''will hold approximately 82.4% of the voting power'';
+      his Class B holding ''comprises approximately 91.6% of our Class B common stock''; Class B voting
+      separately elects ''51% of the total number of authorized directors''. Economic stake computed from
+      the prospectus share counts: (849,494,440 + 5,219,053,075) / (7,380,196,910 + 5,695,668,265) = 46.4%.'
+- id: spacex-abstract
+  kind: source
+  passage: In June 2026 the largest aerospace firm in the world sold shares to the public while its founder
+    retained 82.4 percent of the vote through a class of stock that also elects a majority of the board
+    [@spacex2026].
+  evidence:
+    citation_id: spacex2026
+    locator: Form 424B4, prospectus summary
+    verified: true
+    verification_note: 'Fetched from EDGAR: 82.4% of voting power; Class B elects a majority (51%) of
+      the board.'
+- id: snap-99
+  kind: source
+  passage: Snap's public shareholders hold a class of stock with no vote; the 2 founders control over
+    99 percent of the voting power, each holds a proxy over the other's shares effective on death or disability,
+    and a 2016 dividend of non-voting shares allows the founders to sell economic interest without reducing
+    control [@snap2026].
+  evidence:
+    citation_id: snap2026
+    locator: Form 10-K for fiscal 2025, risk factors
+    verified: true
+    verification_note: 'Fetched from EDGAR: co-founders ''control over 99% of the voting power''; proxy
+      agreement ''would become effective on either founder''s death or disability''; October 2016 dividend
+      of non-voting Class A shares prolongs founders'' voting control.'
+- id: meta-608
+  kind: source
+  passage: Meta's founder holds 60.8 percent of the vote through 99.8 percent of a 10-vote class [@meta2026].
+  evidence:
+    citation_id: meta2026
+    locator: DEF 14A (filed April 16, 2026), security ownership table
+    verified: true
+    verification_note: 'Fetched from EDGAR: Mark Zuckerberg 341,823,978 Class B shares, 99.8% of Class
+      B, 60.8% of total voting power.'
+- id: alphabet-527
+  kind: source
+  passage: Alphabet's 2 founders jointly hold 52.7 percent, at 27.4 and 25.3, while an entire publicly
+    traded class has no vote [@alphabet2026].
+  evidence:
+    citation_id: alphabet2026
+    locator: DEF 14A (filed April 24, 2026), security ownership table
+    verified: true
+    verification_note: 'Fetched from EDGAR: Larry Page 27.4% and Sergey Brin 25.3% of total voting power
+      (sum 52.7); holders of Class C capital stock have no voting power.'
+- id: palantir-f
+  kind: source
+  passage: Palantir's charter sets the founders' Class F stock to a computed quantity, 49.999999 percent
+    of the vote on covered matters less the founders' other votes [@palantir2026].
+  evidence:
+    citation_id: palantir2026
+    locator: DEF 14A (filed April 24, 2026), voting information
+    verified: true
+    verification_note: 'Fetched from EDGAR: the voting power of the Class F common stock ''shall equal
+      49.999999% of the voting power of all of the outstanding shares ... less'' the founders'' other
+      votes.'
+- id: ford-40
+  kind: source
+  passage: Ford's family class is fixed at 40 percent of the general vote and represents 1.8 percent of
+    the shares outstanding [@ford2026].
+  evidence:
+    citation_id: ford2026
+    locator: DEF 14A (filed March 27, 2026), voting information
+    verified: true
+    verification_note: 'Fetched from EDGAR: Class B Stock has 40% of the general voting power; on March
+      16, 2026, 3,940,230,185 common and 70,852,076 Class B shares outstanding, so Class B is 1.8% of
+      shares.'
+- id: pew-trust
+  kind: source
+  passage: Trust in the federal government stood at 73 percent when first measured in 1958 and at 17 percent
+    in 2025 [@pew2025].
+  evidence:
+    citation_id: pew2025
+    locator: Fact sheet, 4 December 2025
+    verified: true
+    verification_note: 'Fetched pewresearch.org: ''Just 17% of Americans now say they trust the government
+      in Washington ...''; ''1958: 73% of Americans trusted the federal government''.'
+- id: dyck-39
+  kind: source
+  passage: The private benefits that motivate the arrangement have been measured directly, as the premium
+    paid for controlling blocks across 39 countries [@dyck2004].
+  evidence:
+    citation_id: dyck2004
+    locator: Abstract
+    verified: true
+    verification_note: 'Crossref abstract: private benefits of control estimated in 39 countries from
+      393 controlling block sales.'
+- id: gompers-masulis
+  kind: source
+  passage: 'The evidence agrees: as insider voting rights rise above cash-flow rights, firm value falls
+    [@gompers2010], cash is worth less to outside shareholders, acquisitions destroy more value and executive
+    pay rises [@masulis2009].'
+  evidence:
+    citation_id: masulis2009
+    locator: Abstract
+    verified: true
+    verification_note: 'Crossref abstract: as the divergence widens, cash holdings are worth less to outside
+      shareholders, CEOs receive higher compensation and value-destroying acquisitions are more frequent.
+      Gompers, Ishii and Metrick (2010) abstract: firm value increasing in insiders'' cash-flow rights
+      and decreasing in voting rights.'
+- id: laporta-norm
+  kind: source
+  passage: Ten-vote and twenty-vote classes, the pyramids of East Asia [@claessens2000] and the crossholdings
+    of the chaebol are variants of one instrument, and concentrated control is the norm worldwide [@laporta1999].
+  evidence:
+    citation_id: laporta1999
+    locator: Abstract
+    verified: true
+    verification_note: 'Crossref abstract: in 27 wealthy economies relatively few large firms are widely
+      held; they are typically controlled by families or the State, with control in excess of cash-flow
+      rights via pyramids.'
+- id: brodsgaard-nomenklatura
+  kind: source
+  passage: Party organization inside the large business groups controls appointments and strategy through
+    the nomenklatura system [@brodsgaard2012], and the 2023 revision of the Company Law, effective July
+    2024, modernized capital rules, audit committees and controlling-shareholder liability within that
+    political order [@npc2023].
+  evidence:
+    citation_id: brodsgaard2012
+    locator: Abstract
+    verified: true
+    verification_note: 'Crossref abstract: through the nomenklatura system the Party controls appointment
+      of CEOs and presidents of the most important business groups.'
+- id: bae-tunneling
+  kind: source
+  passage: 'Korea concentrated control in families through crossholdings, and the measured cost is tunneling:
+    mergers timed and priced to transfer value from minority shareholders to the controlling family [@bae2002].'
+  evidence:
+    citation_id: bae2002
+    locator: Abstract
+    verified: true
+    verification_note: 'Crossref abstract: chaebol acquisitions lower the acquirer''s price while the
+      controlling shareholder benefits through other group firms, consistent with tunneling.'
+- id: tabakovic-examiners
+  kind: source
+  passage: In-house public engineers reduce infrastructure project costs by materially more than their
+    salaries [@liscow2023], and patent examiners grant more patents, of lower quality, to the firms that
+    later hire them [@tabakovic2018].
+  evidence:
+    citation_id: tabakovic2018
+    locator: Abstract
+    verified: true
+    verification_note: 'OpenAlex abstract: examiners grant significantly more patents to firms that later
+      hire them; affected patents have lower quality as measured by forward citations.'
+- id: bertrand-pyramids
+  kind: source
+  passage: Reciprocity restrains extraction without eliminating it; related-party transactions and group-level
+    extraction persist, measured in the propagation of earnings shocks through pyramids [@bertrand2002]
+    and addressed incompletely by a decade of minority-protection reform [@oecd2014].
+  evidence:
+    citation_id: bertrand2002
+    locator: Abstract
+    verified: true
+    verification_note: 'OpenAlex abstract: tunneling measured through the propagation of earnings shocks
+      across firms within Indian business groups.'
+runs:
+- id: models
+  required: true
+  record: verification/models.json

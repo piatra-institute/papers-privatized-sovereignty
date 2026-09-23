@@ -1,0 +1,627 @@
+# CSL references with stable IDs; cite with Pandoc [@id] syntax.
+# Migrated from the legacy inline bibliography. Entries with a DOI were resolved through doi.org
+# content negotiation (CSL-JSON) and checked for year and title; others were matched in Crossref
+# or entered by hand. Provenance per entry is in sources.md.
+references:
+- id: alphabet2026
+  type: report
+  title: Proxy Statement (Schedule 14A)
+  author:
+  - literal: Alphabet Inc.
+  genre: Definitive proxy statement, filed April 24, 2026
+  publisher: U.S. Securities and Exchange Commission
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 24
+  URL: https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm
+- id: ang2006
+  type: article-journal
+  title: 'Government ownership and the performance of government-linked companies: The case of Singapore'
+  author:
+  - given: James S.
+    family: Ang
+  - given: David K.
+    family: Ding
+  container-title: Journal of Multinational Financial Management
+  volume: '16'
+  issue: '1'
+  page: 64-88
+  DOI: 10.1016/j.mulfin.2005.04.010
+  issued:
+    date-parts:
+    - - 2006
+- id: bae2002
+  type: article-journal
+  title: Tunneling or Value Added? Evidence from Mergers by Korean Business Groups
+  author:
+  - given: Kee‐Hong
+    family: Bae
+  - given: Jun‐Koo
+    family: Kang
+  - given: Jin‐Mo
+    family: Kim
+  container-title: The Journal of Finance
+  volume: '57'
+  issue: '6'
+  page: 2695-2740
+  DOI: 10.1111/1540-6261.00510
+  issued:
+    date-parts:
+    - - 2002
+- id: bebchuk2022
+  type: article-journal
+  title: Big Three Power, and Why It Matters
+  author:
+  - family: Bebchuk
+    given: Lucian A.
+  - family: Hirst
+    given: Scott
+  container-title: Boston University Law Review
+  volume: '102'
+  page: 1547-1600
+  issued:
+    date-parts:
+    - - 2022
+- id: bebchuk2017
+  type: article-journal
+  title: The Untenable Case for Perpetual Dual-Class Stock
+  author:
+  - family: Bebchuk
+    given: Lucian A.
+  - family: Kastiel
+    given: Kobi
+  container-title: Virginia Law Review
+  volume: '103'
+  issue: '4'
+  page: 585-630
+  issued:
+    date-parts:
+    - - 2017
+- id: berle1932
+  type: book
+  title: The Modern Corporation and Private Property
+  author:
+  - family: Berle
+    given: Adolf A.
+  - family: Means
+    given: Gardiner C.
+  publisher: Macmillan
+  publisher-place: New York
+  issued:
+    date-parts:
+    - - 1932
+- id: bertrand2002
+  type: article-journal
+  title: 'Ferreting out Tunneling: An Application to Indian Business Groups'
+  author:
+  - given: M.
+    family: Bertrand
+  - given: P.
+    family: Mehta
+  - given: S.
+    family: Mullainathan
+  container-title: The Quarterly Journal of Economics
+  volume: '117'
+  issue: '1'
+  page: 121-148
+  DOI: 10.1162/003355302753399463
+  issued:
+    date-parts:
+    - - 2002
+- id: broadridge2025
+  type: report
+  title: 'ProxyPulse: 2025 Proxy Season Review'
+  author:
+  - literal: Broadridge
+  publisher: Broadridge Financial Solutions
+  issued:
+    date-parts:
+    - - 2025
+      - 10
+- id: brodsgaard2012
+  type: article-journal
+  title: 'Politics and Business Group Formation in China: The Party in Control?'
+  author:
+  - family: Brødsgaard
+    given: Kjeld Erik
+  container-title: The China Quarterly
+  volume: '211'
+  page: 624-648
+  issued:
+    date-parts:
+    - - 2012
+  DOI: 10.1017/S0305741012000811
+- id: brt1990
+  type: legal_case
+  title: Business Roundtable v. Securities and Exchange Commission
+  container-title: F.2d
+  volume: '905'
+  page: '406'
+  authority: D.C. Cir.
+  issued:
+    date-parts:
+    - - 1990
+- id: claessens2000
+  type: article-journal
+  title: The separation of ownership and control in East Asian Corporations
+  author:
+  - given: Stijn
+    family: Claessens
+  - given: Simeon
+    family: Djankov
+  - given: Larry H.P
+    family: Lang
+  container-title: Journal of Financial Economics
+  volume: '58'
+  issue: 1-2
+  page: 81-112
+  DOI: 10.1016/s0304-405x(00)00067-2
+  issued:
+    date-parts:
+    - - 2000
+- id: crs2021
+  type: report
+  title: 'Dual Class Stock: Background and Policy Debate'
+  author:
+  - literal: Congressional Research Service
+  genre: In Focus
+  number: IF11992
+  publisher: Library of Congress
+  publisher-place: Washington, DC
+  issued:
+    date-parts:
+    - - 2021
+  URL: https://crsreports.congress.gov/product/pdf/IF/IF11992
+- id: cii2018
+  type: report
+  title: Petitions to the New York Stock Exchange and Nasdaq to Limit Dual-Class Listings without Sunset
+    Provisions
+  author:
+  - literal: Council of Institutional Investors
+  publisher: Council of Institutional Investors
+  publisher-place: Washington, DC
+  issued:
+    date-parts:
+    - - 2018
+      - 10
+      - 24
+- id: cremers2024
+  type: article-journal
+  title: The Life Cycle of Dual-Class Firm Valuation
+  author:
+  - family: Cremers
+    given: Martijn
+  - family: Lauterbach
+    given: Beni
+  - family: Pajuste
+    given: Anete
+  container-title: The Review of Corporate Finance Studies
+  volume: '13'
+  issue: '2'
+  page: 459-493
+  issued:
+    date-parts:
+    - - 2024
+  DOI: 10.1093/rcfs/cfac026
+- id: dyck2004
+  type: article-journal
+  title: 'Private Benefits of Control: An International Comparison'
+  author:
+  - given: Alexander
+    family: Dyck
+  - given: Luigi
+    family: Zingales
+  container-title: The Journal of Finance
+  volume: '59'
+  issue: '2'
+  page: 537-600
+  DOI: 10.1111/j.1540-6261.2004.00642.x
+  issued:
+    date-parts:
+    - - 2004
+- id: fca2024
+  type: report
+  title: 'PS24/6: Primary Markets Effectiveness Review: Feedback to CP23/31 and Final UK Listing Rules'
+  author:
+  - literal: Financial Conduct Authority
+  number: PS24/6
+  publisher: Financial Conduct Authority
+  publisher-place: London
+  issued:
+    date-parts:
+    - - 2024
+      - 7
+      - 11
+  URL: https://www.fca.org.uk/publications/policy-statements/ps24-6-primary-markets-effectiveness-review-feedback-cp23-31-final-uk-listing-rules
+- id: ford2026
+  type: report
+  title: Proxy Statement (Schedule 14A)
+  author:
+  - literal: Ford Motor Company
+  genre: Definitive proxy statement, filed March 27, 2026
+  publisher: U.S. Securities and Exchange Commission
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 27
+  URL: https://www.sec.gov/Archives/edgar/data/37996/000155278126000164/e26003_f-def14a.htm
+- id: franks2014
+  type: article-journal
+  title: The Ownership of Japanese Corporations in the 20th Century
+  author:
+  - given: Julian
+    family: Franks
+  - given: Colin
+    family: Mayer
+  - given: Hideaki
+    family: Miyajima
+  container-title: Review of Financial Studies
+  volume: '27'
+  issue: '9'
+  page: 2580-2625
+  DOI: 10.1093/rfs/hhu018
+  issued:
+    date-parts:
+    - - 2014
+- id: gompers2010
+  type: article-journal
+  title: 'Extreme Governance: An Analysis of Dual-Class Firms in the United States'
+  author:
+  - family: Gompers
+    given: Paul A.
+  - family: Ishii
+    given: Joy
+  - family: Metrick
+    given: Andrew
+  container-title: The Review of Financial Studies
+  volume: '23'
+  issue: '3'
+  page: 1051-1088
+  issued:
+    date-parts:
+    - - 2010
+  DOI: 10.1093/rfs/hhp024
+- id: grossman1988
+  type: article-journal
+  title: One share-one vote and the market for corporate control
+  author:
+  - given: Sanford J.
+    family: Grossman
+  - given: Oliver D.
+    family: Hart
+  container-title: Journal of Financial Economics
+  volume: '20'
+  page: 175-202
+  DOI: 10.1016/0304-405x(88)90044-x
+  issued:
+    date-parts:
+    - - 1988
+- id: hirschman1970
+  type: book
+  title: 'Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and States'
+  author:
+  - family: Hirschman
+    given: Albert O.
+  publisher: Harvard University Press
+  publisher-place: Cambridge, MA
+  issued:
+    date-parts:
+    - - 1970
+- id: hkex2026
+  type: report
+  title: 'Consultation Conclusions: Listing Framework Competitiveness Review'
+  author:
+  - literal: Hong Kong Exchanges and Clearing
+  publisher: Hong Kong Exchanges and Clearing
+  publisher-place: Hong Kong
+  issued:
+    date-parts:
+    - - 2026
+      - 7
+- id: jpx2026
+  type: report
+  title: Update to the Request Concerning Management That Is Conscious of Cost of Capital and Stock Price
+  author:
+  - literal: Japan Exchange Group
+  publisher: Japan Exchange Group
+  publisher-place: Tokyo
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 28
+- id: jensen1976
+  type: article-journal
+  title: 'Theory of the firm: Managerial behavior, agency costs and ownership structure'
+  author:
+  - given: Michael C.
+    family: Jensen
+  - given: William H.
+    family: Meckling
+  container-title: Journal of Financial Economics
+  volume: '3'
+  issue: '4'
+  page: 305-360
+  DOI: 10.1016/0304-405x(76)90026-x
+  issued:
+    date-parts:
+    - - 1976
+- id: laporta1999
+  type: article-journal
+  title: Corporate Ownership Around the World
+  author:
+  - given: Rafael
+    family: La Porta
+  - given: Florencio
+    family: Lopez-de-Silanes
+  - given: Andrei
+    family: Shleifer
+  container-title: The Journal of Finance
+  volume: '54'
+  issue: '2'
+  page: 471-517
+  DOI: 10.1111/0022-1082.00115
+  issued:
+    date-parts:
+    - - 1999
+- id: light2019
+  type: book
+  title: 'The Government-Industrial Complex: The True Size of the Federal Government, 1984–2018'
+  author:
+  - family: Light
+    given: Paul C.
+  publisher: Oxford University Press
+  publisher-place: New York
+  issued:
+    date-parts:
+    - - 2019
+- id: liscow2023
+  type: report
+  title: Procurement and Infrastructure Costs
+  author:
+  - given: Zachary
+    family: Liscow
+  - given: Will
+    family: Nober
+  - given: Cailin
+    family: Slattery
+  publisher: National Bureau of Economic Research
+  DOI: 10.3386/w31705
+  issued:
+    date-parts:
+    - - 2023
+- id: masulis2009
+  type: article-journal
+  title: Agency Problems at Dual‐Class Companies
+  author:
+  - given: Ronald W.
+    family: Masulis
+  - given: Cong
+    family: Wang
+  - given: Fei
+    family: Xie
+  container-title: The Journal of Finance
+  volume: '64'
+  issue: '4'
+  page: 1697-1727
+  DOI: 10.1111/j.1540-6261.2009.01477.x
+  issued:
+    date-parts:
+    - - 2009
+- id: meta2026
+  type: report
+  title: Proxy Statement (Schedule 14A)
+  author:
+  - literal: Meta Platforms, Inc.
+  genre: Definitive proxy statement, filed April 16, 2026
+  publisher: U.S. Securities and Exchange Commission
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 16
+  URL: https://www.sec.gov/Archives/edgar/data/1326801/000162828026025532/meta-20260416.htm
+- id: nse2025
+  type: report
+  title: India Ownership Tracker
+  author:
+  - literal: National Stock Exchange of India
+  genre: September 2025 issue
+  publisher: NSE
+  publisher-place: Mumbai
+  issued:
+    date-parts:
+    - - 2025
+      - 9
+- id: north2009
+  type: book
+  title: 'Violence and Social Orders: A Conceptual Framework for Interpreting Recorded Human History'
+  author:
+  - family: North
+    given: Douglass C.
+  - family: Wallis
+    given: John Joseph
+  - family: Weingast
+    given: Barry R.
+  publisher: Cambridge University Press
+  publisher-place: Cambridge
+  issued:
+    date-parts:
+    - - 2009
+  DOI: 10.1017/CBO9780511575839
+- id: olson1982
+  type: book
+  title: 'The Rise and Decline of Nations: Economic Growth, Stagflation, and Social Rigidities'
+  author:
+  - family: Olson
+    given: Mancur
+  publisher: Yale University Press
+  publisher-place: New Haven
+  issued:
+    date-parts:
+    - - 1982
+- id: oecd2014
+  type: book
+  title: 'Improving Corporate Governance in India: Related Party Transactions and Minority Shareholder
+    Protection'
+  author:
+  - literal: Organisation for Economic Co-operation and Development
+  collection-title: Corporate Governance
+  publisher: OECD Publishing
+  publisher-place: Paris
+  issued:
+    date-parts:
+    - - 2014
+  DOI: 10.1787/9789264220652-en
+- id: palantir2026
+  type: report
+  title: Proxy Statement (Schedule 14A)
+  author:
+  - literal: Palantir Technologies Inc.
+  genre: Definitive proxy statement, filed April 24, 2026
+  publisher: U.S. Securities and Exchange Commission
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 24
+  URL: https://www.sec.gov/Archives/edgar/data/1321655/000132165526000019/pltr-20260423.htm
+- id: pew2025
+  type: webpage
+  title: 'Public Trust in Government: 1958–2025'
+  author:
+  - literal: Pew Research Center
+  container-title: Pew Research Center
+  publisher-place: Washington, DC
+  issued:
+    date-parts:
+    - - 2025
+      - 12
+      - 4
+  URL: https://www.pewresearch.org/politics/2025/12/04/public-trust-in-government-1958-2025/
+- id: rahman2018
+  type: article-journal
+  title: 'The New Utilities: Private Power, Social Infrastructure, and the Revival of the Public Utility
+    Concept'
+  author:
+  - family: Rahman
+    given: K. Sabeel
+  container-title: Cardozo Law Review
+  volume: '39'
+  issue: '5'
+  page: 1621-1692
+  issued:
+    date-parts:
+    - - 2018
+- id: korea2025
+  type: report
+  title: Amendments to the Commercial Act, Act No. 20991 (promulgated July 22, 2025) and second amendment
+    of 2025
+  author:
+  - literal: Republic of Korea
+  publisher: National Assembly
+  publisher-place: Seoul
+  issued:
+    date-parts:
+    - - 2025
+  genre: Statute
+- id: singapore2020
+  type: report
+  title: Constitution of the Republic of Singapore, Fifth Schedule (2020 Revised Edition)
+  author:
+  - literal: Republic of Singapore
+  issued:
+    date-parts:
+    - - 2020
+  URL: https://sso.agc.gov.sg/Act/CONS1963
+  genre: Statute
+  publisher: Attorney-General's Chambers, Singapore Statutes Online
+- id: seligman1986
+  type: article-journal
+  title: 'Equal Protection in Shareholder Voting Rights: The One Common Share, One Vote Controversy'
+  author:
+  - family: Seligman
+    given: Joel
+  container-title: George Washington Law Review
+  volume: '54'
+  page: 687-724
+  issued:
+    date-parts:
+    - - 1986
+- id: snap2026
+  type: report
+  title: Annual Report (Form 10-K) for the Fiscal Year Ended December 31, 2025
+  author:
+  - literal: Snap Inc.
+  genre: Filed February 5, 2026
+  publisher: U.S. Securities and Exchange Commission
+  issued:
+    date-parts:
+    - - 2026
+      - 2
+      - 5
+  URL: https://www.sec.gov/Archives/edgar/data/1564408/000156440826000013/snap-20251231.htm
+- id: spacex2026
+  type: report
+  title: Prospectus (Form 424B4)
+  author:
+  - literal: Space Exploration Technologies Corp.
+  genre: Filed June 12, 2026; Form 10-Q for the quarter ended June 30, 2026, filed August 4, 2026
+  publisher: U.S. Securities and Exchange Commission
+  issued:
+    date-parts:
+    - - 2026
+      - 6
+      - 12
+  URL: https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm
+- id: npc2023
+  type: report
+  title: Company Law of the People's Republic of China (2023 Revision, Effective July 1, 2024)
+  author:
+  - literal: Standing Committee of the National People's Congress
+  publisher-place: Beijing
+  issued:
+    date-parts:
+    - - 2023
+      - 12
+      - 29
+  genre: Statute
+- id: tabakovic2018
+  type: report
+  title: From Revolving Doors to Regulatory Capture? Evidence from Patent Examiners
+  author:
+  - given: Haris
+    family: Tabakovic
+  - given: Thomas
+    family: Wollmann
+  publisher: National Bureau of Economic Research
+  DOI: 10.3386/w24638
+  issued:
+    date-parts:
+    - - 2018
+- id: tainter1988
+  type: book
+  title: The Collapse of Complex Societies
+  author:
+  - family: Tainter
+    given: Joseph A.
+  publisher: Cambridge University Press
+  publisher-place: Cambridge
+  issued:
+    date-parts:
+    - - 1988
+- id: tse2023
+  type: report
+  title: Action to Implement Management That Is Conscious of Cost of Capital and Stock Price
+  author:
+  - literal: Tokyo Stock Exchange
+  publisher: Tokyo Stock Exchange
+  publisher-place: Tokyo
+  issued:
+    date-parts:
+    - - 2023
+      - 3
+      - 31

@@ -1,5 +1,5 @@
 {
-  "pdf_sha256": "f95cd5d8724aedee9ccb7dcda71f6bd61f13fd9ba38fd37bb90a90b7b5a32e36",
+  "pdf_sha256": "c9beb8f1e6f8ddae351044104b4d7b847d995a94782cd436f3c367a23edf2c3f",
   "page_count": 16,
   "pages_inspected": [
     1,
@@ -20,5 +20,5 @@
     16
   ],
   "all_pages_inspected": true,
-  "notes": "All 16 pages inspected after the prose revision; figure titles replaced with descriptive ones; defeat rates in figure 3 annotated as percentages so the custodial 0.4% no longer prints as 0.00. Metadata-only rebuild: the web blurb in metadata.yaml, a hashed build input, changed, so the PDF was re-rendered (1fce85aa7b1e to f95cd5d8724a); the rendered text is byte-for-byte identical and no page was re-inspected."
+  "notes": "All 16 pages inspected after the migration; citations and the citeproc reference list render correctly, no unresolved citations. Metadata-only rebuild: the web blurb in metadata.yaml, a hashed build input, changed, so the PDF was re-rendered (9659c41af415 to c9beb8f1e6f8); the rendered text is byte-for-byte identical and no page was re-inspected."
 }

@@ -1,0 +1,435 @@
+[
+ {
+  "id": "alphabet2026",
+  "families": [
+   "Alphabet Inc."
+  ],
+  "authors_text": "Alphabet Inc.",
+  "year": "2026",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "ang2006",
+  "families": [
+   "Ang",
+   "Ding"
+  ],
+  "authors_text": "Ang, J. S., and Ding, D. K.",
+  "year": "2006",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "bae2002",
+  "families": [
+   "Bae",
+   "Kang",
+   "Kim"
+  ],
+  "authors_text": "Bae, K.-H., Kang, J.-K., and Kim, J.-M.",
+  "year": "2002",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "bebchuk2022",
+  "families": [
+   "Bebchuk",
+   "Hirst"
+  ],
+  "authors_text": "Bebchuk, L. A., and Hirst, S.",
+  "year": "2022",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "bebchuk2017",
+  "families": [
+   "Bebchuk",
+   "Kastiel"
+  ],
+  "authors_text": "Bebchuk, L. A., and Kastiel, K.",
+  "year": "2017",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "berle1932",
+  "families": [
+   "Berle",
+   "Means"
+  ],
+  "authors_text": "Berle, A. A., and Means, G. C.",
+  "year": "1932",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "bertrand2002",
+  "families": [
+   "Bertrand",
+   "Mehta",
+   "Mullainathan"
+  ],
+  "authors_text": "Bertrand, M., Mehta, P., and Mullainathan, S.",
+  "year": "2002",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "broadridge2025",
+  "families": [
+   "Broadridge"
+  ],
+  "authors_text": "Broadridge",
+  "year": "2025",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "brodsgaard2012",
+  "families": [
+   "Brødsgaard"
+  ],
+  "authors_text": "Brødsgaard, K. E.",
+  "year": "2012",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "brt1990",
+  "families": [
+   "Business Roundtable v. Securities and Exchange Commission"
+  ],
+  "authors_text": "Business Roundtable v. Securities and Exchange Commission",
+  "year": "1990",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "claessens2000",
+  "families": [
+   "Claessens",
+   "Djankov",
+   "Lang"
+  ],
+  "authors_text": "Claessens, S., Djankov, S., and Lang, L. H. P.",
+  "year": "2000",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "crs2021",
+  "families": [
+   "Congressional Research Service"
+  ],
+  "authors_text": "Congressional Research Service",
+  "year": "2021",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "cii2018",
+  "families": [
+   "Council of Institutional Investors"
+  ],
+  "authors_text": "Council of Institutional Investors",
+  "year": "2018",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "cremers2024",
+  "families": [
+   "Cremers",
+   "Lauterbach",
+   "Pajuste"
+  ],
+  "authors_text": "Cremers, M., Lauterbach, B., and Pajuste, A.",
+  "year": "2024",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "dyck2004",
+  "families": [
+   "Dyck",
+   "Zingales"
+  ],
+  "authors_text": "Dyck, A., and Zingales, L.",
+  "year": "2004",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "fca2024",
+  "families": [
+   "Financial Conduct Authority"
+  ],
+  "authors_text": "Financial Conduct Authority",
+  "year": "2024",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "ford2026",
+  "families": [
+   "Ford Motor Company"
+  ],
+  "authors_text": "Ford Motor Company",
+  "year": "2026",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "franks2014",
+  "families": [
+   "Franks",
+   "Mayer",
+   "Miyajima"
+  ],
+  "authors_text": "Franks, J., Mayer, C., and Miyajima, H.",
+  "year": "2014",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "gompers2010",
+  "families": [
+   "Gompers",
+   "Ishii",
+   "Metrick"
+  ],
+  "authors_text": "Gompers, P. A., Ishii, J., and Metrick, A.",
+  "year": "2010",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "grossman1988",
+  "families": [
+   "Grossman",
+   "Hart"
+  ],
+  "authors_text": "Grossman, S. J., and Hart, O. D.",
+  "year": "1988",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "hirschman1970",
+  "families": [
+   "Hirschman"
+  ],
+  "authors_text": "Hirschman, A. O.",
+  "year": "1970",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "hkex2026",
+  "families": [
+   "Hong Kong Exchanges and Clearing"
+  ],
+  "authors_text": "Hong Kong Exchanges and Clearing",
+  "year": "2026",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "jpx2026",
+  "families": [
+   "Japan Exchange Group"
+  ],
+  "authors_text": "Japan Exchange Group",
+  "year": "2026",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "jensen1976",
+  "families": [
+   "Jensen",
+   "Meckling"
+  ],
+  "authors_text": "Jensen, M. C., and Meckling, W. H.",
+  "year": "1976",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "laporta1999",
+  "families": [
+   "La Porta",
+   "Lopez-de-Silanes",
+   "Shleifer"
+  ],
+  "authors_text": "La Porta, R., Lopez-de-Silanes, F., and Shleifer, A.",
+  "year": "1999",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "light2019",
+  "families": [
+   "Light"
+  ],
+  "authors_text": "Light, P. C.",
+  "year": "2019",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "liscow2023",
+  "families": [
+   "Liscow",
+   "Nober",
+   "Slattery"
+  ],
+  "authors_text": "Liscow, Z., Nober, W., and Slattery, C.",
+  "year": "2023",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "masulis2009",
+  "families": [
+   "Masulis",
+   "Wang",
+   "Xie"
+  ],
+  "authors_text": "Masulis, R. W., Wang, C., and Xie, F.",
+  "year": "2009",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "meta2026",
+  "families": [
+   "Meta Platforms"
+  ],
+  "authors_text": "Meta Platforms, Inc.",
+  "year": "2026",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "nse2025",
+  "families": [
+   "National Stock Exchange of India"
+  ],
+  "authors_text": "National Stock Exchange of India",
+  "year": "2025",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "north2009",
+  "families": [
+   "North",
+   "Wallis",
+   "Weingast"
+  ],
+  "authors_text": "North, D. C., Wallis, J. J., and Weingast, B. R.",
+  "year": "2009",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "olson1982",
+  "families": [
+   "Olson"
+  ],
+  "authors_text": "Olson, M.",
+  "year": "1982",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "oecd2014",
+  "families": [
+   "Organisation for Economic Co-operation and Development"
+  ],
+  "authors_text": "Organisation for Economic Co-operation and Development",
+  "year": "2014",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "palantir2026",
+  "families": [
+   "Palantir Technologies Inc."
+  ],
+  "authors_text": "Palantir Technologies Inc.",
+  "year": "2026",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "pew2025",
+  "families": [
+   "Pew Research Center"
+  ],
+  "authors_text": "Pew Research Center",
+  "year": "2025",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "rahman2018",
+  "families": [
+   "Rahman"
+  ],
+  "authors_text": "Rahman, K. S.",
+  "year": "2018",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "korea2025",
+  "families": [
+   "Republic of Korea"
+  ],
+  "authors_text": "Republic of Korea",
+  "year": "2025",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "singapore2020",
+  "families": [
+   "Republic of Singapore"
+  ],
+  "authors_text": "Republic of Singapore",
+  "year": "2020",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "seligman1986",
+  "families": [
+   "Seligman"
+  ],
+  "authors_text": "Seligman, J.",
+  "year": "1986",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "snap2026",
+  "families": [
+   "Snap Inc."
+  ],
+  "authors_text": "Snap Inc.",
+  "year": "2026",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "spacex2026",
+  "families": [
+   "Space Exploration Technologies Corp."
+  ],
+  "authors_text": "Space Exploration Technologies Corp.",
+  "year": "2026",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "npc2023",
+  "families": [
+   "Standing Committee of the National People's Congress"
+  ],
+  "authors_text": "Standing Committee of the National People's Congress",
+  "year": "2023",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "tabakovic2018",
+  "families": [
+   "Tabakovic",
+   "Wollmann"
+  ],
+  "authors_text": "Tabakovic, H., and Wollmann, T. G.",
+  "year": "2018",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "tainter1988",
+  "families": [
+   "Tainter"
+  ],
+  "authors_text": "Tainter, J. A.",
+  "year": "1988",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "tse2023",
+  "families": [
+   "Tokyo Stock Exchange"
+  ],
+  "authors_text": "Tokyo Stock Exchange",
+  "year": "2023",
+  "status": "UNVERIFIED"
+ }
+]

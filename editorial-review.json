@@ -1,10 +1,10 @@
 {
-  "manuscript_sha256": "5fcb3808fb3027ba468dab25662e790825277f616cf93afe734f313c205ba7dc",
+  "manuscript_sha256": "de2a5118d4c268f8f82d1cd2d97d9a500608ec4c4e6426a043e06595904d353e",
   "full_read": true,
   "argument_review": true,
   "structure_review": true,
   "voice_review": true,
   "source_review": true,
   "final_read": true,
-  "notes": "Prose revision: descriptive headings; 'this paper' 18 -> 0 and 'rather than' 8 -> 0; abstract rewritten (about 260 words); the opening comparison with violent crime restated without reference to the paper's originating intuition; aphoristic lines and the closing epigram removed; defeat rates corrected; generic 'he' replaced; all citations preserved."
+  "notes": "Structured-evidence migration: inline bibliography converted to references.yaml (CSL) with Pandoc [@id] citations; claims.yaml ledger and execution receipt added; two model numbers corrected against results.json; prose otherwise unchanged."
 }
